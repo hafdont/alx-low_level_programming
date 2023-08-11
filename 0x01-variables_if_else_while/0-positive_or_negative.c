@@ -11,7 +11,9 @@
  */
 int main(void)
 {
+
 	int random_number;
+
 	srand(time(0));
 	random_number = rand() - RAND_MAX / 2;
 

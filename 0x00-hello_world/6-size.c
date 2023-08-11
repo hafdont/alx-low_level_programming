@@ -2,22 +2,17 @@
 
 /*
  * main - Entry point
- *
+ * 
+ * Description: A script that prints out the size of whatever they are called
  * Return: Always 0 (Success)
  *
  */
 int main(void)
 {
-	int nambari;
-	long int nambari_kubwa;
-	long int nambari_jikubwa;
-	char karakta;
-	float desimoli;
-
-	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(karakta));
-	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(nambari));
-	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(nambari_kubwa));
-	printf("Size of a long long int: %lu bytes(s)\n", (unsigned long)sizeof(nambari_jikubwa));
-	printf("Size of a float: %lu bytes(s)\n", (unsigned long)sizeof(desimoli));
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(char));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(int));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(long int));
+	printf("Size of a long long int: %lu bytes(s)\n", (unsigned long)sizeof(long long));
+	printf("Size of a float: %lu bytes(s)\n", (unsigned long)sizeof(float));
 	return (0);
 }

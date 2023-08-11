@@ -2,7 +2,7 @@
 
 /*
  * main - Entry point
- * 
+ *
  * Description: A script that prints out the size of whatever they are called
  * Return: Always 0 (Success)
  *

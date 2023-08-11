@@ -10,7 +10,7 @@ int main(void)
 {
 	int nambari;
 	long int nambari_kubwa;
-	long long int nambari_jikubwa;
+	long int nambari_jikubwa;
 	char karakta;
 	float desimoli;
 

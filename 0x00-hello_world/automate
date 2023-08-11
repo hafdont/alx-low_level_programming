@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Watch the directory for new files
+inotifywait -m /alx-low_level_programming/0x00-hello_world/  -e create -e moved_to |
+while read path action file; do
+    # Check if the file is regular
+    if [ -f "$path$file" ]; then
+
+	 # Remove white spaces
+        sed -i 's/ //g' "$path$file"
+        echo "Removed white spaces from $file"
+
+	 # Change permissions
+        chmod +x "$path$file"
+        echo "Changed permissions for $file"
+    fi
+done

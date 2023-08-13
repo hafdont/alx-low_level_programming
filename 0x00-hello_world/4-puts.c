@@ -1,13 +1,12 @@
 #include <stdio.h>
 
-/*
- * main entry point
+/**
+ * main - entry point
  *
  * Description: using the puts funtction
  * to print a block of text
  *
- *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

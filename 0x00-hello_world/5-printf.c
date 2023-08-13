@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
- * main - is the entry point bruv
+ * main -Entry point of the program
  *
  * Description: how to print using a print function
+ *
  * Return: Always 0 (Success)
  */
 int main(void)

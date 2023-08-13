@@ -1,13 +1,12 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
  *
  * Description: A script that prints out the size of
- *  different data types in C
- 
- * Return: Always 0 (Success)
+ * different data types in C
  *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

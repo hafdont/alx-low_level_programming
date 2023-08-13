@@ -3,7 +3,9 @@
 /*
  * main - Entry point
  *
- * Description: A script that prints out the size of whatever they are called
+ * Description: A script that prints out the size of
+ *  different data types in C
+ 
  * Return: Always 0 (Success)
  *
  */

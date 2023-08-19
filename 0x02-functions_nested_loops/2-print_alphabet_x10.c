@@ -5,7 +5,8 @@
  *
  * Decription: A program that prints the alphabets
  * it iterates over the 'i'variable to print the ltters ten times
- * and it iterates over the letters variable from 97 to 123 wich are the ASCII equivalent to a to z
+ * and it iterates over the letters variable from 97 to 123
+ * wich are the ASCII equivalent to a to z
  *
  * Return: Always 0 (Success)
  */
@@ -18,7 +19,7 @@ void print_alphabet_x10(void)
 	{
 		letter = 97;
 
-		while letter (letter <= 123)
+		while (letter <= 123)
 		{
 			_putchar(letter);
 			letter++;

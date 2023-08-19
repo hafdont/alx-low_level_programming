@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * main - Entry point 
+ * print_alphabet_x10 - a program that prints the alphabet ten times
+ * in lowercase followed b a new line 
  *
  * Decription: A program that prints the alphabets 
- * Ten times 
+ * Ten timess 
  *
  * Return: Always 0 (Success)
  */

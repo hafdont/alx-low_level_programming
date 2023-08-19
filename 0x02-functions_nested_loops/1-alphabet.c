@@ -2,18 +2,18 @@
 #include <unistd.h>
 
 /**
- * main - Entry point
+ * print_alphabet - A program that prints the alphabets backwards
  *
- * Description: Print the alphabets 
- * backwards 
+ * Description: Print the alphabets backwards
+ * starting from 'z' to 'a'
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 void print_alphabet(void)
 {
 	char letter = 'a';
 
-	while (letter <= 'z' )
+	while (letter <= 'z')
 	{
 		_putchar(letter);
 		letter++;

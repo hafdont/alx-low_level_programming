@@ -1,28 +1,24 @@
 #include "main.h"
 /**
  * print_alphabet_x10 - a program that prints the alphabet ten times
- * in lowercase followed b a new line 
+ * in lowercase followed b a new line
  *
- * Decription: A program that prints the alphabets 
- * Ten timess 
+ * Decription: A program that prints the alphabets
+ * it iterates over the 'i'variable to print the ltters ten times
+ * and it iterates over the letters variable from 97 to 123 wich are the ASCII equivalent to a to z
  *
  * Return: Always 0 (Success)
  */
-int _putchar(char c)
-{
-	return write(1, &c, 1);
-}
-
 void print_alphabet_x10(void)
 {
 	int i;
-	char letter;
+	int letter;
 
 	for (i = 0; i < 10; i++)
 	{
-		letter = 'a';
+		letter = 97;
 
-		while letter (letter <= 'z')
+		while letter (letter <= 123)
 		{
 			_putchar(letter);
 			letter++;
@@ -30,5 +26,5 @@ void print_alphabet_x10(void)
 
 		_putchar('\n');
 	}
-	
+
 }

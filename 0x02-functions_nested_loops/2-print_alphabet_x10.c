@@ -19,7 +19,7 @@ void print_alphabet_x10(void)
 	{
 		letter = 97;
 
-		while (letter <= 123)
+		while (letter < 123)
 		{
 			_putchar(letter);
 			letter++;

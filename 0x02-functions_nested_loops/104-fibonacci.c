@@ -7,23 +7,36 @@
  */
 int main(void)
 {
-    unsigned long int fib1 = 1, fib2 = 2, next;
-    int count = 2; // Starting with 2, as 1 and 2 are already known
+	unsigned long int a, b, c, b1, b2, c1, c2;
 
-    printf("%lu, %lu", fib1, fib2);
+	b = 1;
+	c = 2;
 
-    while (count < 98)
-    {
-        next = fib1 + fib2;
-        printf(", %lu", next);
+	printf("%lu", b);
 
-        fib1 = fib2;
-        fib2 = next;
-        count++;
-    }
+	for (a = 1; a < 91; a++)
+	{
+		printf(", %lu", c);
+		c = c + b;
+		b = c - b;
+	}
 
-    printf("\n");
+	b1 = b / 1000000000;
+	b2 = b % 1000000000;
+	c1 = c / 1000000000;
+	c2 = c % 1000000000;
 
-    return (0);
+	for (a = 92; a < 99; ++a)
+	{
+		printf(", %lu", c1 + (c2 / 1000000000));
+		printf("%lu", c2 % 1000000000);
+		c1 = c1 + b1;
+		b1 = c1 - b1;
+		c2 = c2 + b2;
+		b2 = c2 - b2;
+	}
+
+	printf("\n");
+
+	return (0);
 }
-

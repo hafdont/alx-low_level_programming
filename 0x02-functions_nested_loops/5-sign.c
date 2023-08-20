@@ -1,17 +1,20 @@
 #include "main.h"
 
 /**
- * main- Entry point 
+ * print_sign - A prograam that checks ofr the sign of an intege
  *
- * Description 
+ * Description: the program compares the integer values to 0
+ *a positive and a negative number
  *
- * Return"
+ * @n: the variable value to be checked
+ *
+ * Return: 0 if 0, 1 if postitive and -1 if negativ
  */
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_puthcar('+');
+		_putchar('+');
 		return (1);
 	}
 
@@ -21,7 +24,7 @@ int print_sign(int n)
 		return (0);
 	}
 
-	else 
+	else
 	{
 		_putchar('-');
 		return (-1);

@@ -7,21 +7,25 @@
  */
 int main(void)
 {
-    unsigned long long int fib1 = 1, fib2 = 2, next;
-    unsigned long long int sum = 0;
+	int i;
+	unsigned long int j, k, n, s;
 
-    while (fib2 <= 4000000)
-    {
-        if (fib2 % 2 == 0)
-            sum += fib2;
+	j = 1;
+	k = 2;
+	s = 0;
 
-        next = fib1 + fib2;
-        fib1 = fib2;
-        fib2 = next;
-    }
+	for (i = 1; i <= 33; ++i)
+	{
+		if (j < 4000000 && (j % 2) == 0)
+		{
+			s = s + j;
+		}
+		n = j + k;
+		j = k;
+		k = n;
+	}
 
-    printf("%llu\n", sum);
+	printf("%lu\n", s);
 
-    return (0);
+	return (0);
 }
-

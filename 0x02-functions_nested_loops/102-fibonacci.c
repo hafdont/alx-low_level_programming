@@ -7,20 +7,25 @@
  */
 int main(void)
 {
-	int n;
-	unsigned long long int fib1 = 1, fib2 = 2, next;
+	long int i, j, k, n;
 
-	printf("%llu, %llu", fib1, fib2);
+	j = 1;
 
-	for (n = 2; n < 50; n++)
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
 	{
-		next = fib1 + fib2;
-		printf(", %llu", next);
-		fib1 = fib2;
-		fib2 = next;
+		if (j != 20365011074)
+		{
+			printf("%ld, ", j);
+		} else
+		{
+			printf("%ld\n", j);
+		}
+		n = j + k;
+		j = k;
+		k = n;
 	}
-
-	printf("\n");
 
 	return (0);
 }

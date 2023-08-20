@@ -7,7 +7,7 @@
  *
  * @n: the alue being checked
  *
- * Return: 'lasti_digit' as the return value (Succes)
+ * Return: 'last_digit' as the return value (Succes)
  */
 int print_last_digit(int n)
 {

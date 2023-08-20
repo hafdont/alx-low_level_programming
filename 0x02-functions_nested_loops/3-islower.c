@@ -3,8 +3,9 @@
  * _islower - A program that checks whether a program is lowercase
  * or uppercase
  *
- * Description:the value of the variable c is checked whether
+ * @c: is checked whether
  * its uppercase or lowercase
+ *
  * Return: 1 if c is lowercase, 0 othersise
  */
 int _islower(int c)

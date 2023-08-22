@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen: this function returns the length of a string
+ * _strlen - this function returns the length of a string
  *
  * Description: This functiin works by increasing the pointer untill
  * it reaches the null terminator

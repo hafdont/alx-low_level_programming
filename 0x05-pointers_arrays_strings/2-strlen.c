@@ -3,7 +3,7 @@
 /**
  * _strlen: this function returns the length of a string
  *
- * Descriptin: This functiin works by increasing the pointer untill
+ * Description: This functiin works by increasing the pointer untill
  * it reaches the null terminator
  *
  * @s: the variable whse length is calculated

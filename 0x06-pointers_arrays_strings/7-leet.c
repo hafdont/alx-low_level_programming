@@ -7,21 +7,24 @@
 */
 char *leet(char *str)
 {
-	int i;
-	int size = strlen(str);
-
-	for (i = 0; i < size; i++)
+	char *result = str;
+	char leet_map[256] = {0};
+	char *letters = "aeotlAEOTL";
+	char *replacements = "4307143071";
+	
+	for (int i = 0; letters[i] != '\0'; i++)
 	{
-		if (str[i] == 'a' || str[i] == 'A')
-			str[i] = '4';
-		else if (str[i] == 'e' || str[i] == 'E')
-			str[i] = '3';
-		else if (str[i] == 'o' || str[i] == 'O')
-			str[i] = '0';
-		else if (str[i] == 't' || str[i] == 'T')
-			str[i] = '7';
-		else if (str[i] == 'l' || str[i] == 'L')
-			str[i] = '1';
+		leet_map[(unsigned char)letters[i]] = replacements[i];
 	}
-	return (str);
+	 
+	while (*str  != '\0')
+	{
+		if (leet_map[(unsigned char)*str])
+		{
+			*str = leet_map[(unsigned char) *str];
+		}
+		str++;
+
+		return (result);
+	}
 }

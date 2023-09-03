@@ -22,15 +22,14 @@ int main(int argc, char *argv[])
     int min_coins = 0;
     
     for (i = 0; i < num_coins; i++)
-            {
-                int temp_min_coins = cents / coins[i];
-                if (temp_min_coins < cents)
-                {
-                    cents = temp_min_coins;
-                }
-            }
-            printf("%d\n", cents);
-        }
+    {
+	    while (cents >= coins[i])
+	    {
+		    cents -= coins[i];
+		    min_coins++;
+	    }
     }
+    printf("%d\n", min_coins);
+
     return (0);
 }

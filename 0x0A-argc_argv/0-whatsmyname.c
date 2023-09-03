@@ -2,13 +2,16 @@
 
 /**
  * main - Entry point
+ * @argc: number of the command line arguments
+ * @argv: An array containinb the arguments
  *
- * Return: 0 Always
+ * Return: 0 Always to mean (Success)
  */
-int main(void)
+int main(int argc, char *argv[])
 {
+	(void)argc;
 
-	printf("%s\n", __FILE__);
+	printf("%s\n", argv[0]);
 
 	return (0);
 }

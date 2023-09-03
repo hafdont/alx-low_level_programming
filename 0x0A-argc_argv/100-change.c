@@ -13,10 +13,10 @@ int main(int argc, char *argv[])
 {
 
 	int cents;
-	int coins[]= {25,10, 5, 2, 1 };
+	int coins[] = {25, 10, 5, 2, 1};
 	int num_coins = sizeof(coins) / sizeof(coins[0]);
-	int i,count = 0;
-	
+	int i, count = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -30,8 +30,6 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	
-	
 	for (i = 0; i < num_coins; i++)
 	{
 		while (cents >= coins[i])

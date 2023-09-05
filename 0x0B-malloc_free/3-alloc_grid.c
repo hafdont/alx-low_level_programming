@@ -9,7 +9,7 @@
  * Return: A pointer to the @d array, or Null when no memory is allocated
  */
 
-int **aloC_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int **grid;
 	int i, j;
@@ -18,14 +18,23 @@ int **aloC_grid(int width, int height)
 		return (NULL);
 
 	grid = (int **)malloc(height * sizeof(int *));
-	if (grid ==NULL)
+	if (grid == NULL)
 		return (NULL);
 	for (i = 0; i < height; i++)
 	{
-		grid[i] = (int *)
-		{
-			for (j = 0;) j < i; j++(
-					free(grid[j]);
-					free(grid[j]);
-					return(NULL)
+		grid[i] = (int *)malloc(width * sizeof(int));
 
+		if (grid[i] == NULL)
+		{
+			for (j = 0; j < i; j++)
+				free(grid[j]);
+			free(grid);
+			return (NULL);
+		}
+
+		for (j = 0; j < width; j++)
+			grid[i][j] = 0;
+	}
+
+	return (grid);
+}

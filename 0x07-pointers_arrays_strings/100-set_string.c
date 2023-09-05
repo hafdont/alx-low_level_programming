@@ -32,6 +32,6 @@ void set_string(char **s, char *to)
 	else
 	{
 		fprintf(stderr, "Invalid pointer to poinrt\n");
-		exit (1);
+		exit(1);
 	}
 }

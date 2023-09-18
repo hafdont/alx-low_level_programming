@@ -2,11 +2,11 @@
 #include "dog.h"
 
 /**
- * print_dog: function that prints info 'bout a dog.
- * @d: pointer ti the strict if the dog itself
+ * print_dog - function that prints info 'bout a dog.
+ * @d: pointer to the struct if the dog itself
  *
- * Description: function that pirnts a out a dog'sinfo
- * Return: NULL if none found
+ * Description: Function that pirnts a out a dog'sinfo
+ * Return: (Void) if none found
  */
 
 void print_dog(struct dog *d)

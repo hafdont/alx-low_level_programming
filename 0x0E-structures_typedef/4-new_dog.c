@@ -4,14 +4,14 @@
 #include <stdio.h>
 
 /**
- * struct dog - Structure represents a dog
+ * new_dog - Structure represents a dog
  * @name: dogs name
  * @age: Dog's age
- * Owner: Dog's oners
+ * @owner: Dog's oners
  *
  * Description : Struct defines a dog,its name age and owner
  *
- * Return Void
+ * Return: Void
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -29,8 +29,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 		if (new_dog->name == NULL || new_dog->owner == NULL)
 		{
-			free(new_dog->name);
-			free(new_dog->owner);
+			if (new_dog->name != NULL)
+			{
+				free(new_dog->name);
+			}
+			if (new_dog->owner != NULL)
+			{
+				free(new_dog->owner);
+			}
 			free(new_dog);
 			return (NULL);
 		}

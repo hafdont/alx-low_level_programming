@@ -9,7 +9,7 @@
  * @age: Dog's age
  * Owner: Dog's oners
  *
- * Description: struct defines a dog,its name age and owner
+ * Description : Struct defines a dog,its name age and owner
  *
  * Return Void
  */

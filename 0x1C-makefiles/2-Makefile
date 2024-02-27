@@ -1,7 +1,6 @@
-# Vairables 
 CC = gcc
 SRC = main.c school.c 
-OBJ = $(SRC:.c-.o)
+OBJ = $(SRC:.c=.o)
 NAME = school
 
 # Rule to build the esecutable

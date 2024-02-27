@@ -16,4 +16,7 @@ oclean :
 
 fclean: clean oclean
 
-re : oclean all
+re : fclean all
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
